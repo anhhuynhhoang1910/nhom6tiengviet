@@ -62,13 +62,13 @@ export const CommunityScreen: React.FC = () => {
 
   const getLevelColor = (level: string) => {
     switch (level) {
-      case 'Beginner':
+      case 'Sinh Viên Năm 1':
         return 'text-green-600 bg-green-100';
-      case 'Intermediate':
+      case 'Thạc sĩ':
         return 'text-orange-600 bg-orange-100';
-      case 'Advanced':
+      case 'Sinh viên năm 2':
         return 'text-blue-600 bg-blue-100';
-      case 'Expert':
+      case 'Lớp 1212':
         return 'text-purple-600 bg-purple-100';
       default:
         return 'text-gray-600 bg-gray-100';
