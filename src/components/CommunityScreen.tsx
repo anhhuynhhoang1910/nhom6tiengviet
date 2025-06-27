@@ -68,7 +68,7 @@ export const CommunityScreen: React.FC = () => {
         return 'text-orange-600 bg-orange-100';
       case 'Sinh viên năm 2':
         return 'text-blue-600 bg-blue-100';
-      case 'Lớp 1212':
+      case 'Lớp 12':
         return 'text-purple-600 bg-purple-100';
       default:
         return 'text-gray-600 bg-gray-100';
