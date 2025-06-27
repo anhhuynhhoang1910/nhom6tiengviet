@@ -105,7 +105,7 @@ export const CommunityScreen: React.FC = () => {
           <div className="bg-white rounded-2xl p-4 text-center shadow-sm">
             <MessageCircle className="text-blue-600 mx-auto mb-2" size={24} />
             <p className="text-lg font-bold text-gray-800">1.2k</p>
-            <p className="text-xs text-gray-600">Câu hỏihỏi</p>
+            <p className="text-xs text-gray-600">Câu hỏi</p>
           </div>
           <div className="bg-white rounded-2xl p-4 text-center shadow-sm">
             <Users className="text-green-600 mx-auto mb-2" size={24} />
