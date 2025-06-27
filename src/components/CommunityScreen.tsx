@@ -7,7 +7,7 @@ export const CommunityScreen: React.FC = () => {
       id: 1,
       title: 'Làm thế nào để giải tích phân từng phần?',
       subject: 'Toán Học',
-      author: 'Huỳnh Hoàng Anh',
+      author: 'Huỳnh Hòang Anh',
       authorLevel: 'Sinh Viên Năm 1',
       time: '2 giờ trước',
       likes: 15,
