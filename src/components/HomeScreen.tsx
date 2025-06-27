@@ -4,15 +4,15 @@ import { Brain, Calendar, BookOpen, TrendingUp, Users, Award, Clock, Target } fr
 
 export const HomeScreen: React.FC = () => {
   const todayTasks = [
-    { subject: 'Mathematics', topic: 'Calculus Integration', time: '2:00 PM', progress: 75 },
-    { subject: 'Physics', topic: 'Quantum Mechanics', time: '4:30 PM', progress: 30 },
-    { subject: 'Chemistry', topic: 'Organic Compounds', time: '7:00 PM', progress: 0 },
+    { subject: 'Toán học', topic: 'Đường chiếu', time: '2:00 PM', progress: 75 },
+    { subject: 'Vật lý', topic: 'Ánh sáng', time: '4:30 PM', progress: 30 },
+    { subject: 'Hóa học', topic: 'Hóa hữu cơ', time: '7:00 PM', progress: 0 },
   ];
 
   const achievements = [
-    { name: 'Study Streak', icon: Target, value: '7 days', color: 'text-green-600' },
-    { name: 'Quiz Master', icon: Brain, value: '95%', color: 'text-blue-600' },
-    { name: 'Helpful Peer', icon: Users, value: '12 helps', color: 'text-purple-600' },
+    { name: 'Streak', icon: Target, value: '7 ngày', color: 'text-green-600' },
+    { name: 'Câu đố', icon: Brain, value: '95%', color: 'text-blue-600' },
+    { name: 'Người đã hỏi', icon: Users, value: '12 người', color: 'text-purple-600' },
   ];
 
   return (
@@ -24,11 +24,11 @@ export const HomeScreen: React.FC = () => {
         <div className="bg-white rounded-2xl p-4 shadow-sm">
           <div className="flex items-center mb-3">
             <Brain className="text-purple-600 mr-2" size={20} />
-            <h3 className="font-semibold text-gray-800">AI Recommendations</h3>
+            <h3 className="font-semibold text-gray-800">AI gợi ý</h3>
           </div>
           <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-3">
-            <p className="text-sm text-gray-700 mb-2">Based on your learning pattern:</p>
-            <p className="text-sm font-medium text-purple-700">Focus on Calculus practice problems today. Your retention is highest at 2-4 PM.</p>
+            <p className="text-sm text-gray-700 mb-2">Dựa trên mô hình học tập của bạn:</p>
+            <p className="text-sm font-medium text-purple-700">Dựa vào bài tập thực hành giải tích ngày hôm nay. Khả năng ghi nhớ của bạn cao nhất vào lúc 2-4 giờ chiều.</p>
           </div>
         </div>
 
@@ -37,9 +37,9 @@ export const HomeScreen: React.FC = () => {
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center">
               <Calendar className="text-blue-600 mr-2" size={20} />
-              <h3 className="font-semibold text-gray-800">Today's Schedule</h3>
+              <h3 className="font-semibold text-gray-800">Lịch trình hôm nay</h3>
             </div>
-            <button className="text-blue-600 text-sm font-medium">View All</button>
+            <button className="text-blue-600 text-sm font-medium">Xem tất cả</button>
           </div>
           
           <div className="space-y-3">
@@ -83,15 +83,15 @@ export const HomeScreen: React.FC = () => {
 
         {/* Quick Actions */}
         <div className="bg-white rounded-2xl p-4 shadow-sm">
-          <h3 className="font-semibold text-gray-800 mb-3">Quick Actions</h3>
+          <h3 className="font-semibold text-gray-800 mb-3">Nhanh</h3>
           <div className="grid grid-cols-2 gap-3">
             <button className="flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl py-3 space-x-2 hover:from-blue-600 hover:to-blue-700 transition-all duration-200">
               <BookOpen size={20} />
-              <span className="font-medium">Study Now</span>
+              <span className="font-medium">Học ngay</span>
             </button>
             <button className="flex items-center justify-center bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-xl py-3 space-x-2 hover:from-purple-600 hover:to-purple-700 transition-all duration-200">
               <TrendingUp size={20} />
-              <span className="font-medium">View Progress</span>
+              <span className="font-medium">Xem tiến độ</span>
             </button>
           </div>
         </div>
