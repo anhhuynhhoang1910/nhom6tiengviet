@@ -17,46 +17,46 @@ export const CommunityScreen: React.FC = () => {
     },
     {
       id: 2,
-      title: 'Quantum mechanics wave function interpretation',
-      subject: 'Physics',
-      author: 'Alex Chen',
-      authorLevel: 'Expert',
-      time: '4 hours ago',
+      title: 'Giải thích hàm sóng cơ học lượng tử',
+      subject: 'Vật Lý',
+      author: 'Đàm Lê Phương Anh',
+      authorLevel: 'Thạc sĩ',
+      time: '4 giờ trước',
       likes: 23,
       replies: 12,
       solved: false,
-      tags: ['quantum', 'physics'],
+      tags: ['#vatlydaihoc', 'vatly'],
     },
     {
       id: 3,
-      title: 'Organic chemistry reaction mechanisms',
-      subject: 'Chemistry',
-      author: 'Maya Patel',
-      authorLevel: 'Intermediate',
-      time: '1 day ago',
+      title: 'Cơ chế phản ứng hóa học hữu cơ',
+      subject: 'Hóa học',
+      author: 'Nguyễn Thanh Tú Quyên',
+      authorLevel: 'Sinh viên năm 2',
+      time: '1 ngày trước',
       likes: 8,
       replies: 5,
       solved: false,
-      tags: ['organic', 'reactions'],
+      tags: ['hoahoc', 'daicuong'],
     },
   ];
 
   const studyGroups = [
     {
       id: 1,
-      name: 'Calculus Study Circle',
+      name: 'Toán học đại cương',
       members: 24,
-      subject: 'Mathematics',
-      nextSession: 'Today 7:00 PM',
-      level: 'Intermediate',
+      subject: 'Toán học',
+      nextSession: 'Hôm nay 7:00 PM',
+      level: 'Lớp 12',
     },
     {
       id: 2,
-      name: 'Physics Problem Solvers',
+      name: 'Vật lý đại cương',
       members: 18,
-      subject: 'Physics',
-      nextSession: 'Tomorrow 3:00 PM',
-      level: 'Advanced',
+      subject: 'Vật lý',
+      nextSession: 'Ngày mai 3:00 PM',
+      level: 'Lớp 12',
     },
   ];
 
@@ -121,7 +121,7 @@ export const CommunityScreen: React.FC = () => {
 
         {/* Filter Tabs */}
         <div className="flex space-x-2 overflow-x-auto">
-          {['All', 'Mathematics', 'Physics', 'Chemistry', 'Biology'].map((filter) => (
+          {['Tất cả', 'Toán', 'Vật lý', 'Hóa học', 'Sinh học'].map((filter) => (
             <button
               key={filter}
               className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-200 ${
