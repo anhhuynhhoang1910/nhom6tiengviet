@@ -39,7 +39,7 @@ export const StudyRoadmapScreen: React.FC = () => {
       topic: 'Cơ học',
       status: 'Sẵn sàng',
       difficulty: 'Trung bình',
-      estimatedTime: '5 ',
+      estimatedTime: '5 tuần',
       progress: 0,
       aiGenerated: false,
     },
@@ -184,15 +184,15 @@ export const StudyRoadmapScreen: React.FC = () => {
                     <div className="flex justify-between items-center">
                       <button 
                         className={`text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 ${
-                          item.status === 'locked' 
+                          item.status === 'Tạm dừng' 
                             ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
-                            : item.status === 'completed'
+                            : item.status === 'Hoàn thành'
                             ? 'bg-green-100 text-green-700 hover:bg-green-200'
                             : 'bg-blue-100 text-blue-700 hover:bg-blue-200'
                         }`}
                         disabled={item.status === 'Tạm dừng'}
                       >
-                        {item.status === 'Hoàn thành' ? 'Review' : item.status === 'Tạm dừng' ? 'Tạm dừng' : 'Tiếp tục'}
+                        {item.status === 'Hoàn thành' ? 'Xem' : item.status === 'Tạm dừng' ? 'Tạm dừng' : 'Tiếp tục'}
                       </button>
                       
                       {item.status !== 'Tạm dừng' && (
