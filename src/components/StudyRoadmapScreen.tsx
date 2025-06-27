@@ -5,41 +5,41 @@ export const StudyRoadmapScreen: React.FC = () => {
   const roadmapItems = [
     {
       id: 1,
-      subject: 'Mathematics',
-      topic: 'Basic Algebra',
-      status: 'completed',
-      difficulty: 'Beginner',
-      estimatedTime: '2 weeks',
+      subject: 'Toán học',
+      topic: 'Đại số cơ bản',
+      status: 'Hoàn thành',
+      difficulty: 'Cơ bản',
+      estimatedTime: '2 Tuần',
       progress: 100,
       aiGenerated: true,
     },
     {
       id: 2,
-      subject: 'Mathematics',
-      topic: 'Calculus Fundamentals',
-      status: 'in-progress',
-      difficulty: 'Intermediate',
-      estimatedTime: '3 weeks',
+      subject: 'Toán học',
+      topic: 'Cơ sở giải tích',
+      status: 'Đang học',
+      difficulty: 'Trung bình',
+      estimatedTime: '3 tuần',
       progress: 65,
       aiGenerated: true,
     },
     {
       id: 3,
-      subject: 'Mathematics',
-      topic: 'Advanced Integration',
-      status: 'locked',
-      difficulty: 'Advanced',
-      estimatedTime: '4 weeks',
+      subject: 'Toán học',
+      topic: 'Giải tích nâng cao',
+      status: 'Tạm dừng',
+      difficulty: 'Khó',
+      estimatedTime: '4 tuần',
       progress: 0,
       aiGenerated: true,
     },
     {
       id: 4,
-      subject: 'Physics',
-      topic: 'Classical Mechanics',
-      status: 'available',
-      difficulty: 'Intermediate',
-      estimatedTime: '5 weeks',
+      subject: 'Vật lý',
+      topic: 'Cơ học',
+      status: 'Sẵn sàng',
+      difficulty: 'Trung bình',
+      estimatedTime: '5 ',
       progress: 0,
       aiGenerated: false,
     },
@@ -77,12 +77,12 @@ export const StudyRoadmapScreen: React.FC = () => {
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-b-3xl">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h2 className="text-xl font-bold">Study Roadmap</h2>
-            <p className="text-blue-100 text-sm">AI-personalized learning path</p>
+            <h2 className="text-xl font-bold">Kế hoạch học tập</h2>
+            <p className="text-blue-100 text-sm">Lộ trình học tập được cá nhân hóa bằng AI</p>
           </div>
           <div className="flex items-center bg-white/20 rounded-full px-3 py-1">
             <Brain size={16} className="mr-1" />
-            <span className="text-sm font-medium">AI Optimized</span>
+            <span className="text-sm font-medium">AI đđã tối ưu hóa</span>
           </div>
         </div>
       </div>
@@ -91,10 +91,10 @@ export const StudyRoadmapScreen: React.FC = () => {
         {/* Progress Overview */}
         <div className="bg-white rounded-2xl p-4 shadow-sm">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="font-semibold text-gray-800">Overall Progress</h3>
+            <h3 className="font-semibold text-gray-800">Tiến độ chung</h3>
             <div className="flex items-center text-blue-600">
               <Trophy size={16} className="mr-1" />
-              <span className="text-sm font-medium">42% Complete</span>
+              <span className="text-sm font-medium">42% Hoàn thành</span>
             </div>
           </div>
           <div className="w-full bg-gray-200 rounded-full h-3 mb-3">
@@ -103,15 +103,15 @@ export const StudyRoadmapScreen: React.FC = () => {
           <div className="grid grid-cols-3 gap-4 text-center">
             <div>
               <p className="text-2xl font-bold text-green-600">3</p>
-              <p className="text-xs text-gray-600">Completed</p>
+              <p className="text-xs text-gray-600">Hoàn thành</p>
             </div>
             <div>
               <p className="text-2xl font-bold text-blue-600">2</p>
-              <p className="text-xs text-gray-600">In Progress</p>
+              <p className="text-xs text-gray-600">Đang học</p>
             </div>
             <div>
               <p className="text-2xl font-bold text-gray-400">8</p>
-              <p className="text-xs text-gray-600">Remaining</p>
+              <p className="text-xs text-gray-600">Chưa học</p>
             </div>
           </div>
         </div>
@@ -120,9 +120,9 @@ export const StudyRoadmapScreen: React.FC = () => {
         <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-4 border border-purple-100">
           <div className="flex items-center mb-2">
             <Brain className="text-purple-600 mr-2" size={20} />
-            <h3 className="font-semibold text-gray-800">AI Study Suggestion</h3>
+            <h3 className="font-semibold text-gray-800">AI gợi ý</h3>
           </div>
-          <p className="text-sm text-gray-700">Based on your performance, focus on Calculus practice problems this week. Estimated completion: 3 days ahead of schedule!</p>
+          <p className="text-sm text-gray-700">Dựa trên kết quả của bạn, hãy tập trung vào các bài tập thực hành giải tích tuần này. Dự kiến ​​hoàn thành: sớm hơn dự kiến ​​3 ngày!</p>
         </div>
 
         {/* Roadmap Items */}
@@ -169,7 +169,7 @@ export const StudyRoadmapScreen: React.FC = () => {
                     {item.status !== 'locked' && (
                       <div className="mb-3">
                         <div className="flex justify-between items-center mb-1">
-                          <span className="text-xs text-gray-600">Progress</span>
+                          <span className="text-xs text-gray-600">Tiến độđộ</span>
                           <span className="text-xs font-medium text-gray-800">{item.progress}%</span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
