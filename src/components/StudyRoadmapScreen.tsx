@@ -47,11 +47,11 @@ export const StudyRoadmapScreen: React.FC = () => {
 
   const getStatusIcon = (status: string) => {
     switch (status) {
-      case 'completed':
+      case 'Hoàn thành':
         return <CheckCircle className="text-green-500" size={24} />;
-      case 'in-progress':
+      case 'Đang học':
         return <Circle className="text-blue-500" size={24} />;
-      case 'locked':
+      case 'Tạm dừng':
         return <Circle className="text-gray-400" size={24} />;
       default:
         return <Circle className="text-gray-300" size={24} />;
@@ -60,11 +60,11 @@ export const StudyRoadmapScreen: React.FC = () => {
 
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
-      case 'Beginner':
+      case 'Cơ bản':
         return 'text-green-600 bg-green-100';
-      case 'Intermediate':
+      case 'Trung bình':
         return 'text-orange-600 bg-orange-100';
-      case 'Advanced':
+      case 'Khó':
         return 'text-red-600 bg-red-100';
       default:
         return 'text-gray-600 bg-gray-100';
@@ -135,7 +135,7 @@ export const StudyRoadmapScreen: React.FC = () => {
               )}
               
               <div className={`bg-white rounded-2xl p-4 shadow-sm relative z-10 ${
-                item.status === 'locked' ? 'opacity-60' : ''
+                item.status === 'Tạm dừng' ? 'opacity-60' : ''
               }`}>
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 mt-1">
@@ -166,10 +166,10 @@ export const StudyRoadmapScreen: React.FC = () => {
                       </div>
                     </div>
 
-                    {item.status !== 'locked' && (
+                    {item.status !== 'Tạm dừng' && (
                       <div className="mb-3">
                         <div className="flex justify-between items-center mb-1">
-                          <span className="text-xs text-gray-600">Tiến độđộ</span>
+                          <span className="text-xs text-gray-600">Tiến độ</span>
                           <span className="text-xs font-medium text-gray-800">{item.progress}%</span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
@@ -190,12 +190,12 @@ export const StudyRoadmapScreen: React.FC = () => {
                             ? 'bg-green-100 text-green-700 hover:bg-green-200'
                             : 'bg-blue-100 text-blue-700 hover:bg-blue-200'
                         }`}
-                        disabled={item.status === 'locked'}
+                        disabled={item.status === 'Tạm dừng'}
                       >
-                        {item.status === 'completed' ? 'Review' : item.status === 'locked' ? 'Locked' : 'Continue'}
+                        {item.status === 'Hoàn thành' ? 'Review' : item.status === 'Tạm dừng' ? 'Tạm dừng' : 'Tiếp tục'}
                       </button>
                       
-                      {item.status !== 'locked' && (
+                      {item.status !== 'Tạm dừng' && (
                         <div className="flex items-center space-x-2">
                           <button className="p-2 text-gray-400 hover:text-blue-600 transition-colors">
                             <BookOpen size={16} />
