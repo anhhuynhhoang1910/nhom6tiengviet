@@ -81,8 +81,8 @@ export const CommunityScreen: React.FC = () => {
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-b-3xl">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h2 className="text-xl font-bold">Community</h2>
-            <p className="text-blue-100 text-sm">Learn together, grow together</p>
+            <h2 className="text-xl font-bold">Cộng Đồng</h2>
+            <p className="text-blue-100 text-sm">Học cùng nhau, phát triển cùng nhau</p>
           </div>
           <button className="bg-white/20 backdrop-blur-sm rounded-full p-2 hover:bg-white/30 transition-all duration-200">
             <Plus size={20} />
@@ -105,17 +105,17 @@ export const CommunityScreen: React.FC = () => {
           <div className="bg-white rounded-2xl p-4 text-center shadow-sm">
             <MessageCircle className="text-blue-600 mx-auto mb-2" size={24} />
             <p className="text-lg font-bold text-gray-800">1.2k</p>
-            <p className="text-xs text-gray-600">Questions</p>
+            <p className="text-xs text-gray-600">Câu hỏihỏi</p>
           </div>
           <div className="bg-white rounded-2xl p-4 text-center shadow-sm">
             <Users className="text-green-600 mx-auto mb-2" size={24} />
             <p className="text-lg font-bold text-gray-800">45</p>
-            <p className="text-xs text-gray-600">Study Groups</p>
+            <p className="text-xs text-gray-600">Nhóm học tập</p>
           </div>
           <div className="bg-white rounded-2xl p-4 text-center shadow-sm">
             <Award className="text-purple-600 mx-auto mb-2" size={24} />
             <p className="text-lg font-bold text-gray-800">89%</p>
-            <p className="text-xs text-gray-600">Solved Rate</p>
+            <p className="text-xs text-gray-600">Mức độ giải</p>
           </div>
         </div>
 
@@ -138,7 +138,7 @@ export const CommunityScreen: React.FC = () => {
         {/* Recent Questions */}
         <div className="bg-white rounded-2xl p-4 shadow-sm">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="font-semibold text-gray-800">Recent Questions</h3>
+            <h3 className="font-semibold text-gray-800">Câu hỏi gần đây</h3>
             <Filter className="text-gray-400" size={20} />
           </div>
           
@@ -195,8 +195,8 @@ export const CommunityScreen: React.FC = () => {
         {/* Study Groups */}
         <div className="bg-white rounded-2xl p-4 shadow-sm">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="font-semibold text-gray-800">Active Study Groups</h3>
-            <button className="text-blue-600 text-sm font-medium">View All</button>
+            <h3 className="font-semibold text-gray-800">Nhóm đang hoạt động</h3>
+            <button className="text-blue-600 text-sm font-medium">Xem tất cả</button>
           </div>
           
           <div className="space-y-3">
@@ -213,7 +213,7 @@ export const CommunityScreen: React.FC = () => {
                   <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-1">
                       <Users size={14} className="text-gray-400" />
-                      <span className="text-sm text-gray-600">{group.members} members</span>
+                      <span className="text-sm text-gray-600">{group.members} thành viên</span>
                     </div>
                     <div className="flex items-center space-x-1">
                       <Clock size={14} className="text-gray-400" />
