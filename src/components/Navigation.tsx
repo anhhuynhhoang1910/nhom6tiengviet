@@ -8,11 +8,11 @@ interface NavigationProps {
 
 export const Navigation: React.FC<NavigationProps> = ({ activeTab, onTabChange }) => {
   const tabs = [
-    { id: 'home', icon: Home, label: 'Home' },
-    { id: 'roadmap', icon: Map, label: 'Study Plan' },
-    { id: 'community', icon: Users, label: 'Community' },
-    { id: 'tutor', icon: MessageCircle, label: 'Tutors' },
-    { id: 'profile', icon: User, label: 'Profile' },
+    { id: 'home', icon: Home, label: 'Trang chủ' },
+    { id: 'roadmap', icon: Map, label: 'Kế hoạch' },
+    { id: 'community', icon: Users, label: 'Cộng đồng' },
+    { id: 'tutor', icon: MessageCircle, label: 'Gia sư' },
+    { id: 'profile', icon: User, label: 'Thông tin' },
   ];
 
   return (
