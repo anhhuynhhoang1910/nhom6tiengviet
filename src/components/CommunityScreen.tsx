@@ -5,7 +5,7 @@ export const CommunityScreen: React.FC = () => {
   const questions = [
     {
       id: 1,
-      title: 'How to solve integration by parts?',
+      title: 'Làm thế nào để giải tích phân từng phần?',
       subject: 'Mathematics',
       author: 'Sarah Kim',
       authorLevel: 'Advanced',
