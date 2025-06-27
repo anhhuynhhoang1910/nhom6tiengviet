@@ -82,7 +82,7 @@ export const StudyRoadmapScreen: React.FC = () => {
           </div>
           <div className="flex items-center bg-white/20 rounded-full px-3 py-1">
             <Brain size={16} className="mr-1" />
-            <span className="text-sm font-medium">AI đđã tối ưu hóa</span>
+            <span className="text-sm font-medium">AI đã tối ưu hóa</span>
           </div>
         </div>
       </div>
