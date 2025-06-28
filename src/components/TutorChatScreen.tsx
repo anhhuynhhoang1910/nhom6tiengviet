@@ -40,7 +40,7 @@ export const TutorChatScreen: React.FC = () => {
     {
       id: 4,
       sender: 'tutor',
-      content: '📄 Integration by Parts - Complete Guide.pdf',
+      content: '📄 Công thức từng phần - Hướng dẫn đầy đủ.pdf',
       time: '2:18 PM',
       type: 'document',
       documentPrice: 10,
