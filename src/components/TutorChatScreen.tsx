@@ -117,7 +117,7 @@ export const TutorChatScreen: React.FC = () => {
             </div>
           </div>
           <button className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">
-            Book Session
+            Đặt lịch
           </button>
         </div>
       </div>
@@ -146,7 +146,7 @@ export const TutorChatScreen: React.FC = () => {
                       <span className="text-sm font-medium">{msg.documentPrice} xu</span>
                     </div>
                     <button className="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full hover:bg-blue-200 transition-colors">
-                      Purchase
+                      Đổi xu
                     </button>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export const TutorChatScreen: React.FC = () => {
                   <span className="text-sm font-medium">{doc.price}</span>
                 </div>
                 <button className="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full hover:bg-blue-200 transition-colors">
-                  Buy
+                  Mua
                 </button>
               </div>
             </div>
@@ -201,7 +201,7 @@ export const TutorChatScreen: React.FC = () => {
               type="text"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Type your message..."
+              placeholder="Nhập tin nhắn ..."
               className="w-full bg-gray-100 rounded-full py-3 px-4 pr-12 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-200"
             />
             <button 
